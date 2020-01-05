@@ -1,6 +1,6 @@
 {
     "name": "trackers",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Arrays of public BitTorrent trackers.",
     "repository": "https://github.com/Richienb/trackers.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
