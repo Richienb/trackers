@@ -1,41 +1,34 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Trackers [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/trackers/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/trackers)
 
-My awesome module.
+Arrays of public BitTorrent trackers, extracted from https://github.com/ngosang/trackerslist and updated weekly.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/trackers.png)](https://npmjs.com/package/trackers)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install trackers
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const trackers = require("trackers");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+trackers;
+//=> ['udp://tracker.coppersurfer.tk:6969/announce','udp://tracker.leechers-paradise.org:6969/announce', ...]
 ```
 
 ## API
 
-### theModule(input, options?)
+The following files are importable (eg. `require("trackers/trackers_all"`)
 
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+- `trackers_all` (default import)
+- `trackers_all_http`
+- `trackers_all_https`
+- `trackers_all_ip`
+- `trackers_all_udp`
+- `trackers_all_ws`
+- `trackers_best_ip`
+- `trackers_best`
+- `blacklist`

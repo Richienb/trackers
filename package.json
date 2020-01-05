@@ -1,27 +1,39 @@
 {
-    "name": "the-module",
+    "name": "trackers",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Arrays of public BitTorrent trackers.",
+    "repository": "https://github.com/Richienb/trackers.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
-    "main": "index.js",
+    "main": "trackers_all.json",
     "files": [
-        "index.js",
-        "index.d.ts"
+        "trackers*",
+        "blacklist*"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=0.5"
     },
     "scripts": {
+        "build": "node build",
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
+    "keywords": [
+        "trackers",
+        "torrent",
+        "magent",
+        "bittorrent",
+        "seed",
+        "download"
+    ],
     "dependencies": {},
     "devDependencies": {
+        "@sindresorhus/is": "^1.2.0",
         "ava": "^2.4.0",
         "eslint-config-richienb": "^0.2.3",
+        "fs-extra": "^8.1.0",
+        "got": "^10.2.1",
+        "url-join": "^4.0.1",
         "xo": "^0.25.3"
     },
     "resolutions": {
