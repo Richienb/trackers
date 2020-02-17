@@ -28,7 +28,7 @@
     ],
     "dependencies": {},
     "devDependencies": {
-        "@sindresorhus/is": "^1.2.0",
+        "@sindresorhus/is": "^2.1.0",
         "ava": "^2.4.0",
         "eslint-config-richienb": "^0.2.3",
         "fs-extra": "^8.1.0",
